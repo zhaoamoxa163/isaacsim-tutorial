@@ -1,0 +1,31 @@
+{
+    "CarControllerTutorial": {
+        "version": 1,
+        "language": "python",
+        "icon": "icons/icon.svg",
+        "uiName": "Car Controller Tutorial",
+        "description": [
+            "you just know this's test. To control car"
+        ],
+        "categoryDefinitions": "config/CategoryDefinition.json",
+        "categories": ["extension:Category"],
+        "inputs": {
+            "execIn": {
+                "type": "execution",
+                "description": "Input execution trigger"
+            },
+            "topic": {
+                "type": "string",
+                "uiName": "Subscribe Topic",
+                "description": "Topic to subscribe to",
+                "default": "/car_control_cmd"
+            }
+        },
+        "outputs": {
+            "execOut": {
+                "type": "execution",
+                "description": "Output execution trigger"
+            }
+        }
+    }
+}

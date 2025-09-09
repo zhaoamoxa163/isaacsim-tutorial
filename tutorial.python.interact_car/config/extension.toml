@@ -1,0 +1,31 @@
+# Extension configuration file.
+# Visit the "Extension configuration file (extension.toml)" section for more details:
+# https://docs.omniverse.nvidia.com/kit/docs/kit-manual/latest/guide/extensions_advanced.html
+#
+
+[core]
+reloadable = true
+order = 0
+
+[package]
+version = "0.1.0"
+category = "other"
+title = "Interact With Car"
+description = "Test Description"
+changelog = "docs/CHANGELOG.md"
+readme = "docs/README.md"
+preview_image = "data/preview.png"
+icon = "data/icon.png"
+
+[dependencies]
+"omni.graph" = {}
+"omni.graph.tools" = {}
+"isaacsim.ros2.bridge" = {}
+
+# define the Python module that the extension provides
+[[python.module]]
+name = "tutorial.python.interact_car"
+
+[settings]
+exts."tutorial.python.interact_car".timeout = 5
+

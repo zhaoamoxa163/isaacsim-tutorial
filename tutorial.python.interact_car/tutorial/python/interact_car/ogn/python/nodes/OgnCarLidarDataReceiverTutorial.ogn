@@ -1,0 +1,41 @@
+{
+    "CarLidarDataReceiverTutorial": {
+        "version": 1,
+        "language": "python",
+        "icon": "icons/icon.svg",
+        "uiName": "Car Lidar Data Receiver Tutorial",
+        "description": [
+            "effect in introduce page."
+        ],
+        "categoryDefinitions": "config/CategoryDefinition.json",
+        "categories": ["extension:Category"],
+        "inputs": {
+            "execIn": {
+                "type": "execution",
+                "description": "Input execution trigger"
+            },
+            "lidarPath": {
+                "type": "string",
+                "uiName": "Lidar Path",
+                "description": "lidar prim",
+                "default": "/World/jackal_basic/base_link/lidar_xfrom/Velodyne_VLS128"
+            }
+        },
+        "outputs": {
+            "execOut": {
+                "type": "execution",
+                "description": "Output execution trigger"
+            },
+            "timestamp": {
+                "type": "double",
+                "uiName": "Lidar Timestamp",
+                "description": "lidar Timestamp from car"
+            },
+            "lidarData": {
+                "type": "pointf[3][]",
+                "uiName": "Lidar Data",
+                "description": "lidar data name from car"
+            }
+        }
+    }
+}
