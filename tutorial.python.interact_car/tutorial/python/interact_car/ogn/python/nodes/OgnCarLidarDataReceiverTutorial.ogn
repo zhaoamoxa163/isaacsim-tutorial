@@ -18,7 +18,7 @@
                 "type": "string",
                 "uiName": "Lidar Path",
                 "description": "lidar prim",
-                "default": "/World/jackal_basic/base_link/lidar_xfrom/Velodyne_VLS128"
+                "default": "/World/jackal_basic/base_link/lidar_xform/Velodyne_VLS128"
             }
         },
         "outputs": {
